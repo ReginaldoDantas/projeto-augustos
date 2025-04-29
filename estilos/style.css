@@ -1,0 +1,109 @@
+@charset "UTF8";
+
+@import url('https://fonts.googleapis.com/css2?family=Tagesschrift&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+RO:wght@100..400&display=swap');
+
+:root {
+    --fontes01: "Tagesschrift", system-ui;
+    --fonte02: "Playwrite RO", cursive ;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    min-height: 10vh;
+    
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding-bottom: 52px;
+}
+
+header > h1 {
+    font-family: var(--fontes01);
+    padding-top: 50px;
+    font-variant: small-caps;
+    font-size: 3em;
+}
+
+header > p {
+    padding-bottom: 17px;
+}
+
+a  {
+   color: white;
+   text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+section {
+    font-family: var(--fonte02);
+    padding-top: 20vh;
+    padding-bottom: 20vh;
+    line-height: 2.3em;
+    padding-left: 30px;
+    font-size: 19px;
+}
+
+section.normal {
+   background-color: white;
+    color: black;
+}
+
+section.imagem{
+    background-color: rgb(154, 151, 151);
+    color: white;
+}
+
+section.imagem > p {
+    background-color: rgba(0, 0, 0, 0.491);
+    width: 245px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+section#img01 {
+    background-image: url('../imagens/Elias-Oliveira-imagem1-caatinga.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section#img02 {
+    background-image: url('../imagens/fe204b116459215.606284e7bb59b.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+section#img03 {
+    background-image: url('../imagens/obra-renascimento-arte.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+h1 {
+    text-align: center;
+    padding-top: 84px;
+    font-size: 4em;
+    font-variant: small-caps;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
